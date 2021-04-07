@@ -1,0 +1,442 @@
+    /* Reset CSS */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+    }
+    /* Các bước thực hiện
+    Xác định
+1. vị trí
+2. kích thước 
+3. màu sắc
+3. kiểu dáng
+*/
+    /* common */
+    
+    .text-white {
+        color: #fff !important;
+    }
+    
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .col-full {
+        width: 100%;
+    }
+    
+    .col-2 {
+        width: 50%;
+    }
+    
+    .col-3 {
+        width: 33.33333%;
+    }
+    
+    .mt-8 {
+        margin-top: 8px;
+    }
+    
+    .mt-16 {
+        margin-top: 16px;
+    }
+    
+    .mt-32 {
+        margin-top: 32px;
+    }
+    
+    .pull-right {
+        display: block;
+        margin-left: auto;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        background-color: #000;
+        color: #fff;
+        font-size: 15px;
+        border: none;
+        line-height: 22px;
+        text-align: center;
+    }
+    
+    .btn:hover {
+        background-color: #ccc;
+        color: #000;
+        cursor: pointer;
+    }
+    
+    .btn:active {
+        outline: none;
+    }
+    
+    #app {}
+    
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 46px;
+        background-color: #000;
+        z-index: 1;
+    }
+    
+    #nav {
+        display: inline-block;
+    }
+    
+    #nav li {
+        display: inline-block;
+    }
+    
+    #nav>li:hover>a {
+        background-color: #ccc;
+        color: #000;
+    }
+    
+    #nav li a {
+        text-decoration: none;
+        line-height: 46px;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 0 24px;
+        display: block;
+    }
+    
+    #nav>li>a {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    #nav .more {
+        position: relative;
+    }
+    
+    .nav-arrow-down {
+        font-size: 15px;
+        margin-left: 2px;
+    }
+    
+    #nav .more:hover .sub_nav {
+        display: block;
+    }
+    
+    #nav .sub_nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        min-width: 160px;
+        z-index: 2;
+    }
+    
+    #nav .sub_nav>li:hover {
+        width: 100%;
+        background-color: #ccc;
+        color: #000;
+    }
+    
+    #nav .sub_nav a {
+        color: #000;
+        font-size: 17px;
+        padding: 0 17px;
+        line-height: 38px;
+    }
+    
+    #header .search-btn,
+    #header .mobile-menu-btn {
+        height: 100%;
+        float: right;
+        padding: 0 23px;
+        color: #fff;
+    }
+    
+    #header .search-btn:hover {
+        background-color: #f44336;
+        cursor: pointer;
+    }
+    
+    #header .mobile-menu-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 46px;
+        display: none;
+    }
+    
+    #header .mobile-menu-btn:hover {
+        background-color: #ccc;
+    }
+    
+    #header .mobile-menu-btn:hover .mobile-menu-icon {
+        color: #000;
+    }
+    
+    #header .mobile-menu-icon,
+    #header .search-icon {
+        line-height: 46px;
+        font-size: 17px;
+        color: #fff;
+    }
+    
+    #slider {
+        position: relative;
+        margin-top: 45px;
+        /* bang 50% chieu dai cua chinh no */
+        padding-top: 50%;
+        background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+    }
+    
+    #slider .text-content {
+        position: absolute;
+        color: #fff;
+        width: 100%;
+        bottom: 43px;
+        text-align: center;
+    }
+    
+    #slider .content-heading {
+        font-weight: 300;
+        font-size: 24px;
+    }
+    
+    #slider .content-description {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    
+    #content .content-section {
+        width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 64px 0 112px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    
+    #content .section-heading {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 4px;
+    }
+    
+    #content .section-sub-heading {
+        text-align: center;
+        margin-top: 25px;
+        opacity: 0.6;
+    }
+    
+    #content .about-text {
+        line-height: 1.4;
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    #content .member-list {
+        display: flex;
+        margin-top: 32px;
+        max-width: 800px;
+    }
+    
+    #content .text-center {
+        text-align: center;
+    }
+    
+    #content .member-name {
+        font-size: 15px;
+        text-align: center;
+        margin: 15px 0;
+        font-weight: 300;
+    }
+    
+    #content .member-avatar {
+        width: 160px;
+        align-items: center;
+        border-radius: 4px;
+    }
+    /* tour section */
+    
+    .tour-section {
+        width: 100%;
+        background-color: #000;
+    }
+    
+    .tour-section .tickets-list {
+        background-color: #fff;
+        margin-top: 38px;
+    }
+    
+    .tour-section .tickets-list li {
+        font-size: 15px;
+        padding: 11px 16px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .tour-section .tickets-list li:last-child {
+        border: none;
+    }
+    
+    .tour-section .sold-out {
+        font-size: 15px;
+        padding: 3px 8px;
+        margin-left: 16px;
+        background-color: #f44336;
+        color: #fff;
+    }
+    
+    .tour-section .ticket-quantity {
+        font-size: 15px;
+        float: right;
+        padding: 0 8px;
+        margin-right: 16px;
+        border-radius: 50%;
+        background-color: #000;
+        color: #fff;
+        line-height: 23px;
+    }
+    /* Places */
+    
+    .tour-section .places-list {
+        display: flex;
+        /* ky thuat xoa padding cua class .place-img */
+        margin-top: 16px;
+    }
+    
+    .tour-section .place-img {
+        width: 100%;
+        display: block;
+    }
+    
+    .tour-section .place-img:hover {
+        opacity: 0.6;
+    }
+    
+    .tour-section .place-content {
+        background-color: #fff;
+        padding: 16px;
+        font-size: 15px;
+    }
+    
+    .tour-section .place-name {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 17px;
+    }
+    
+    .tour-section .place-time {
+        padding-bottom: 15px;
+        opacity: 0.6;
+    }
+    
+    .tour-section .place-description {
+        padding-bottom: 15px;
+        line-height: 1.4;
+    }
+    /* Contact */
+    
+    .contact-content {
+        margin-top: 47px;
+    }
+    
+    .contact-info {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    
+    .contact-info i[class*="fa-"] {
+        width: 30px;
+        font-size: 16px;
+    }
+    
+    .contact-form {
+        font-size: 15px;
+    }
+    
+    .contact-form .form-control {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        font-size: 15px;
+        outline: none;
+    }
+    
+    .contact-form .form-submit {
+        font-size: 15px;
+        color: #fff;
+        background-color: #000;
+        padding: 10px 15px;
+        border: none;
+        display: block;
+        margin-left: auto;
+    }
+    
+    .contact-form .form-submit:hover {
+        background-color: #ccc;
+        cursor: pointer;
+        color: #000;
+    }
+    /* map section */
+    
+    .map-section .map-img {
+        width: 100%;
+    }
+    /* footer */
+    
+    #footer {
+        padding: 64px 0;
+    }
+    
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social li {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .social-author {
+        font-size: 15px;
+        opacity: 1;
+        text-align: center;
+    }
+    
+    .social-icon {
+        color: #000;
+        opacity: 0.7;
+        font-size: 24px;
+        padding: 0 3px;
+    }
+    
+    .social-icon:hover {
+        opacity: 0.4;
+    }
+    
+    .social-author {
+        opacity: 0.7;
+        margin: 15px 0;
+    }
+    
+    .social-author a {
+        color: #000;
+    }

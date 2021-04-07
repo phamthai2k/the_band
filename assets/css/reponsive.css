@@ -1,0 +1,90 @@
+/* PC */
+
+@media (min-width:1024px) {}
+
+
+/* Tablet & Mobile */
+
+@media (max-width: 1023px) {
+    .btn {
+        padding: 13px 16px;
+    }
+    #nav .sub_nav a {
+        padding: 5px 17px;
+    }
+    .contact-form .form-control {
+        padding: 14px 12px;
+    }
+    .contact-info {
+        line-height: 2;
+    }
+    .social-icon {
+        font-size: 36px;
+    }
+    .social li a {
+        margin: 0 8px;
+    }
+    .social-author a {
+        padding: 8px 0;
+        display: inline-block;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width:740px) and (max-width:1023px) {}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .s-col-full,
+    .s-full-width {
+        width: 100% !important;
+    }
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+    #nav {
+        display: block;
+    }
+    #nav>li {
+        display: block
+    }
+    #nav>li:first-child {
+        display: inline-block;
+    }
+    #nav li a {
+        padding: 1px 24px;
+    }
+    #nav .sub_nav {
+        position: initial;
+        background-color: #333;
+    }
+    #nav .more:hover .sub_nav {
+        display: initial;
+    }
+    #nav .sub_nav li {
+        display: block;
+    }
+    #nav .sub_nav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    #header .mobile-menu-btn {
+        display: block;
+    }
+    #content .member-avatar {
+        width: 60%;
+    }
+    .contact-form {
+        margin-top: 32px;
+    }
+}
