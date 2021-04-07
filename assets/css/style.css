@@ -86,8 +86,6 @@
         outline: none;
     }
     
-    #app {}
-    
     #header {
         position: fixed;
         top: 0;
@@ -204,6 +202,7 @@
         margin-top: 45px;
         /* bang 50% chieu dai cua chinh no */
         padding-top: 50%;
+        /* link tuong doi */
         background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
     }
     
